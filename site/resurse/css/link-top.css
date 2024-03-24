@@ -1,0 +1,43 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Sau left: 20px; dacă vrei în stânga paginii */
+  width: 50px;
+  line-height: 50px;/*facem cercul*/
+  text-align: center;/*pune sageata in centru*/
+  border-radius: 50%;/*pentru forma de cerc*/
+  box-shadow: inset 0 0 10px var(--negru); /* Schimbă culoarea conform schemei tale cromatice */
+  border-top: 3px solid var(--negru); /* Schimbă cu culoarea dorită */
+  border-bottom: 3px solid var(--negru); /* Schimbă cu culoarea dorită */
+  border-left: 3px solid var(--alb); /* Schimbă cu culoarea dorită */
+  border-right: 3px solid var(--alb); /* Schimbă cu culoarea dorită */
+  opacity: 0.5;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.scroll-to-top::before {
+  content: attr(title);
+  content: bottom;
+  opacity: 0;
+  width: 100px;
+  border: 2px solid var(--negru);
+  color: var(--negru); /* Schimbă cu culoarea dorită */
+  font-size: small;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  transition: opacity 0.3s;
+}
+
+.scroll-to-top:hover::before {
+  visibility: visible;
+  opacity: 1;
+}

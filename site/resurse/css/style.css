@@ -1,0 +1,88 @@
+header{
+    border: 4px solid var(--c5);
+    background-color: var(--c1);
+    border-radius: 5px;
+    padding-left: var(--dim3);
+    padding-right: var(--dim3);
+}
+footer{
+    border: 4px solid var(--c5);
+    background-color: var(--c1);
+    border-radius: 5px;
+    padding-left: var(--dim3);
+    padding-right: var(--dim3);
+}
+body{
+    --c1:#52CBD9;
+    --c2:#4FC4D1;
+    --c3:#42A3AD;
+    --c4:#35848C;
+    --c5:#246970;
+    --c6:#1B4347;
+    --alb:white;
+    --negru:black;
+
+    --dim:100px;
+    --dim1:70px;
+    --dim2:50px;
+    --dim3:30px;
+    --dim4:15px;
+    
+    padding-left: var(--dim);
+    padding-right: var(--dim);
+}
+h1{
+    text-align: center;
+    font-family: "Neuton", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+h2{
+    border: 2px solid var(--c3);
+    background-color: var(--c1);
+    border-radius: 5px;
+    padding-left: var(--dim3);
+    padding-right: var(--dim3);
+    text-align: center;
+}
+
+h3{
+    border: 1px solid var(--c4);
+    border-radius: 5px;
+    padding-left: var(--dim4);
+    padding-right: var(--dim4);
+    text-align: center;
+}
+
+img,iframe {
+    border: 8px solid var(--c6);
+    width: 100%;
+    max-width: 800px; 
+}
+
+.container-iframe{
+    display: flex;
+    flex-direction: row;
+}
+
+.taburi-iframe>a{
+    text-decoration: none;
+    color: var(--c6);
+    background-color: var(--c1);
+    display: block;
+    border: 4px solid var(--c6);
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+    margin-bottom: 2px;
+    padding-top: 10px;/*am pus textul in mijloc*/
+    box-shadow: inset 5px 0 0 0 var(--c6);
+    transition: 1s;
+}
+
+.taburi-iframe>a:hover{
+    color:var(--c1);
+    background-color: var(--c6);
+    transition: 1s;
+}

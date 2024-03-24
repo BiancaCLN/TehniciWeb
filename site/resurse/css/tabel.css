@@ -1,0 +1,54 @@
+body{
+    --c1:#52CBD9;
+    --c2:#4FC4D1;
+    --c3:#42A3AD;
+    --c4:#35848C;
+    --c5:#246970;
+    --c6:#1B4347;
+    --alb:white;
+    --negru:black;
+}
+
+
+#tab-cars th, #tab-cars td{
+    border: 2px solid var(--c6);
+    transition: box-shadow 0.5s; /* Tranziție pentru box-shadow */
+}
+
+#tab-cars{
+    border-spacing: 0;
+    border-collapse: collapse;
+    max-width: 100%;
+    caption-side: bottom;
+}
+
+
+#tab-cars td:nth-child(even) {
+    border-right: 2px solid var(--c1); /* Culoarea pentru borderele coloanelor cu numere pare */
+}
+#tab-cars td:nth-child(odd) {
+    border-right: 2px solid var(--c6); /* Culoarea pentru borderele coloanelor cu numere impare */
+ }
+
+#tab-cars  thead th {
+    border-bottom: 2px solid var(--c6);; /* Grosimea bordului pentru zona thead */
+}
+#tab-cars tfoot td {
+    border-top: 4px solid var(--c6);; /* Grosimea bordului pentru zona tfoot */
+}
+
+#tab-cars tr:hover td {
+    box-shadow: 0 0 2px 2px var(--c6); /* Efect box-shadow la hover */
+}
+
+@media only screen and (max-width: 768px) {
+          /* scrollbar */
+    .table-container {
+      overflow: scroll;
+      height: 200px;
+
+  }
+
+}
+
+
